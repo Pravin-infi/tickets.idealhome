@@ -1,0 +1,20 @@
+{
+    "/js/app.js": "/js/app.js?id=8c2559d1a4ad9841bdde8fc430059fab",
+    "/js/events_show.js": "/js/events_show.js?id=22128f59207dd1ab97788160f3c365c1",
+    "/js/bookings_organiser.js": "/js/bookings_organiser.js?id=93903eb4592e40888220b94a6968d940",
+    "/js/bookings_customer.js": "/js/bookings_customer.js?id=428853a0dd1cf821b3ac90b6e3371a74",
+    "/js/events_manage.js": "/js/events_manage.js?id=3f03c41aa1288cefc0b4aa9ad270a3cd",
+    "/js/myevents.js": "/js/myevents.js?id=6858b7796a032c8f048aab58d3d054ce",
+    "/js/organiser.js": "/js/organiser.js?id=2075718ada102e6b4b1783d6b4a5b4cf",
+    "/js/events_listing.js": "/js/events_listing.js?id=9db20602dd1d7c329ff9f765a7f72d96",
+    "/js/welcome.js": "/js/welcome.js?id=848509b6fea047c37c389e45f41a4800",
+    "/js/myguests.js": "/js/myguests.js?id=9520aac1e329ec9a263c4b1b12296e12",
+    "/js/sub_organizers.js": "/js/sub_organizers.js?id=29cdb4d9b46ae9d86765bba9f60635cf",
+    "/js/ticket_scan.js": "/js/ticket_scan.js?id=49d8500413c641e69b5c97b4a923ef9a",
+    "/js/manage_reviews.js": "/js/manage_reviews.js?id=df2cbf2a70fb1d7cfe4b7784c1206b1a",
+    "/js/profile.js": "/js/profile.js?id=0c413167ddea33b136dfd2e4c4c7389d",
+    "/js/event_dashboard.js": "/js/event_dashboard.js?id=c145cfc61a5b7cd68e7d645c41340168",
+    "/js/seats.js": "/js/seats.js?id=0f60f23d4afda0c0829f1e5d99c6cf9e",
+    "/js/event_earning.js": "/js/event_earning.js?id=7e912a2eef97fac6235dbeec954a6ce5",
+    "/js/search.js": "/js/search.js?id=5e7d0304091d901bb22020b0da746ed2"
+}

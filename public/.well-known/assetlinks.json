@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.classiebit.eventmieprofullyloaded",
+    "sha256_cert_fingerprints":
+    ["67:65:76:E1:D6:70:F2:F9:2A:15:28:0C:29:9E:C0:1D:D8:70:EB:42:D4:48:A8:22:8F:22:1B:3C:09:0B:E5:7C"]
+  }
+}]
