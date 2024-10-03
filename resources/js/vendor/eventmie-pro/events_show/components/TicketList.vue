@@ -2159,9 +2159,9 @@ export default {
 
             ticket_price_unchanged: [],
 
-            //visit_show_day: "Friday October 18th",
-            ptsb_notification: false,
-            direct_connect_attendee: false,
+            // visit_show_day: false,
+            // ptsb_notification: false,
+            // direct_connect_attendee: false,
             questionsAnswered: false
 
             /* CUSTOM */
@@ -3066,9 +3066,58 @@ export default {
 
         donationPriceSuggestion: function (price, multiply) {
             return price * multiply;
-        }
+        },
 
         //CUSTOM
+        validateRegisterUser() {
+            this.register_modal = 0;
+            this.overflowHidden = false;
+            var fnameObject = this.fname[0];
+            var lnameObject = this.lname[0];
+            var emailObject = this.address[0];
+            
+
+            if (this.quantity != fnameObject.length || this.quantity != lnameObject.length) {
+                Vue.helpers.showToast('error', 'All Fields are required');
+                return false;
+            }
+
+            if (JSON.stringify(emailObject).includes(null) || JSON.stringify(emailObject).includes('""') || emailObject.length == 0) {
+                Vue.helpers.showToast('error', 'Email field required');
+                return false;
+            }
+            // Check for null values in first name array
+            if (JSON.stringify(fnameObject).includes(null) || JSON.stringify(fnameObject).includes('""')) {
+                Vue.helpers.showToast('error', 'All First Names are required');
+                return false;
+            }
+
+            // Check for null values in last name array
+            if (JSON.stringify(lnameObject).includes(null) || JSON.stringify(lnameObject).includes('""')) {
+                Vue.helpers.showToast('error', 'All Last Names are required');
+                return false;
+            }
+
+            if (this.visit_show_day == undefined) {
+                Vue.helpers.showToast('error', 'Which day do you intend to visit the Show?');
+                return false;
+            }
+
+            if (this.direct_connect_attendee == undefined) {
+                Vue.helpers.showToast('error', 'Would you like to receive information directly from exhibitors attending the event?');
+                return false;
+            }
+
+            if (this.ptsb_notification == undefined) {
+                Vue.helpers.showToast('error', 'Terms and privacy policy is required');
+                return false;
+            }
+
+            
+            this.register_modal = 1;         
+            return true
+        },
+  
     },
 
     watch: {
@@ -3114,9 +3163,15 @@ export default {
             if (this.show_checkout_timer) {
                 this.reloadPage();
             }
-        }
+        },
 
         // CUSTOM
+        register_modal(newVal) {
+            if (newVal > 0) {
+                // Trigger validation when the register-user component is loaded
+                this.validateRegisterUser();
+            }
+        },
     },
 
     mounted() {
